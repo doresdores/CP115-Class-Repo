@@ -1,0 +1,14 @@
+#dorothy C02
+monthly_usage = int(input('input monthly usage:'))
+
+#determine discount
+if monthly_usage > 100:
+    discount = 0.2
+elif monthly_usage >=50:
+    discount = 0.05
+else:
+    discount = 0
+    
+
+total_bill = monthly_usage + (monthly_usage*discount)
+print('total bill:', total_bill)
