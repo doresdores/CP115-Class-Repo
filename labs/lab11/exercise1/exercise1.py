@@ -1,14 +1,12 @@
 num_rounds = int(input())
 # TODO: Your code here
-# Use input() inside the loop to get each round's score
-
 total_score = 0
 rounds_processed = 0
 
-for _ in range(num_rounds):
-    round_score = int(input())  # integer input only
+for num in range(num_rounds):
+    round_score = int(input())
     if round_score > 100:
-        round_score += int(0.2 * round_score)  # 20% bonus rounded down
+        round_score += int(0.2 * round_score)  
     total_score += round_score
     rounds_processed += 1
 

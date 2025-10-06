@@ -1,12 +1,17 @@
-target_points = int(input("targer point:"))
+target_points = int(input())
 
 # TODO: Your code here
-# Use input() inside the while loop to get points each round
-point = int(input())
-while point != target_points:
-    
-    level += step
-    step += 1  # Increase step each time
+
+total_points = 0
+rounds_played = 0
+
+while total_points < target_points:
+    points = int(input())  
+    total_points += points
+    rounds_played += 1
 
 print(total_points)
 print(rounds_played)
+
+
+
