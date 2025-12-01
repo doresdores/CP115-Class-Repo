@@ -20,6 +20,7 @@ if (passing_count == 0) :
 else:
     pass_rate = (passing_count / score_count) * 100
 
+
 print(passing_count)
 print(failing_count)
 print(f"{pass_rate:.2f}")
